@@ -1,0 +1,212 @@
+.main-header .container-fluid,.slider-section .container-fluid{
+    max-width: 1480px;
+}
+.our-primary-manu{}
+.our-primary-manu ul{ }
+.our-primary-manu ul li{ }
+ul.our-primary-manu li a{
+    color: #111111;
+    padding: 0 20px;
+    font-weight: 500;
+    text-decoration: none;
+ }
+ul.our-primary-manu li:hover> a{
+    color: #e73a3e;
+}
+ul.our-primary-manu li{
+    position: relative;
+}
+ul.our-primary-manu li ul li {
+    margin-top: 20px;
+    flex-direction: column;
+}
+ul.our-primary-manu li ul{
+    position: absolute;
+    left: 0;
+    top: 280%;
+    width: 250px;
+    background: #fff;
+    list-style: none;
+    padding: 10px;
+    transition:all .5s ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+}
+ul.our-primary-manu li:hover ul{
+   top: 150%;
+   opacity: 1;
+   visibility: visible;
+}
+.header-search{
+    width: 60px;
+    text-align: center;
+}
+.header-search {
+    width: 60px;
+    text-align: center;
+    border-right: 1px solid #ddd;
+}
+.header-call {
+    width: 242px;
+}
+.header-call-icon span {
+    font-size: 31px;
+    display: inline-block;
+    margin-right: 20px;
+    margin-left: 12px;
+    color: #e73a3e;
+}
+.header-call-item span {
+    color: #606060;
+}
+.header-call-item a {
+    text-decoration: none;
+    color: #111;
+    font-weight: 400;
+    font-size: 20px;
+}
+.btn-primary {
+    background: #e73a3e !important;
+    color: #fff;
+    padding: 13px 50px;
+    border-color: #e73a3e;
+    position: relative;
+    z-index: 1;
+}
+.btn-primary:hvoer{
+    border-color: #111;
+}
+.btn-primary::after{
+    content: "";
+    left:0;
+    top: 0;
+    position: absolute;
+    height: 100%;
+    width: 0;
+    background: #111111;
+    color: #fff;
+    transition: .3s;
+    z-index: -1;
+    border-color: #111;
+}
+.btn-primary:hover::after{
+    width: 100%;
+}
+/*slider-section*/
+.slider-section{
+    background: url(./img/main-banner2.jpg) top center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.slider-content-wrap{
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.slider-social{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.slider-social ul{
+    list-style: none;
+    padding-left: 0;
+}
+.slider-social ul li{}
+.slider-social ul li span{
+    margin-right: 50px;
+    position: relative;
+}
+.slider-social ul li span::after {
+    content: "";
+    left: 77px;
+    top: 57%;
+    background: #111;
+    height: 1px;
+    width: 39px;
+    position: absolute;
+}
+.slider-social ul li a{
+    display: inline-block;
+    color: #111111;
+    padding: 0 20px;
+    font-size: 20px;
+    transition: .5;
+}
+.slider-social ul li a:hover{
+    color: #e73a3e;
+}
+.slider-coltent{}
+.slider-coltent h6{
+    color: #e73a3e;
+}
+.slider-coltent h1 {
+    font-size: 59px;
+    font-weight: 500;
+    margin: 25px 0;
+}
+.slider-coltent p {
+    color: #606060;
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 34px;
+}
+/*logo section*/
+.logo-section{
+    border-bottom: 1px solid #ddd;
+}
+.logo-section ul{
+    list-style: none;
+    padding-left: 0;
+}
+.about-img{
+    position: relative;
+}
+.img-text {
+    position: absolute;
+    right: 100px;
+    bottom: 0;
+    text-align: center;
+    background: url(./img/shape.png) no-repeat;
+    background-size: contain;
+    height: 200px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.img-text-innter h1{
+    color: #e73a3e;
+}
+.finix-text h6{
+    color: #e73a3e;
+}
+.finix-text h2 {
+    font-weight: 400;
+    font-size: 43px;
+    margin: 25px 0;
+}
+.finix-text p {
+    color: #606060;
+    font-size: 22px;
+}
+.finix-text strong{
+    color: #606060;
+    font-weight: 500;
+}
+.finix-text ul{
+    list-style: none;
+    padding-left: 0;
+}
+.finix-text ul li{
+    margin-top: 15px;
+}
+.finix-text ul li::before {
+    content: "\f00c";
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 600;
+    color: red;
+    display: inline-block;
+    margin-right: 20px;
+}
